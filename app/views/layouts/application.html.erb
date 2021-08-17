@@ -4,12 +4,14 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="card">
+      <h2><%= link_to "Wikinimous", articles_path %></h2>
+      <%= link_to 'New article', new_article_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

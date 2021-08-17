@@ -1,0 +1,10 @@
+<%= form_for(article) do |f| %>
+  <div class="mb-3">
+    <%= f.label :title, "title" %>
+    <%= f.text_field :title %>
+    <div class="mb-3">
+      <%= f.label :content, "content" %>
+      <%= f.text_field :content %>
+      <div class="mb-3">
+        <%= f.submit %>
+      <% end %>
